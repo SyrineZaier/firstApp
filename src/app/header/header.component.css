@@ -1,0 +1,42 @@
+/* Navbar container */
+.navbar {
+    background-color: #2c3e50; /* Dark background */
+    padding: 10px 20px; /* Spacing inside the navbar */
+    display: flex;
+    justify-content: center; /* Center align the menu */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  
+  /* Navigation list styling */
+  .nav-list {
+    list-style: none; /* Remove default bullet points */
+    display: flex; /* Align items horizontally */
+    gap: 20px; /* Spacing between items */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navigation links */
+  .nav-list a {
+    text-decoration: none; /* Remove underline */
+    color: #ecf0f1; /* Light text color */
+    font-size: 1.2rem; /* Increase font size */
+    font-weight: 500; /* Slightly bold */
+    padding: 5px 10px; /* Padding inside links */
+    transition: all 0.3s ease; /* Smooth hover effect */
+  }
+  
+  /* Hover effect on links */
+  .nav-list a:hover {
+    color: #2c3e50; /* Darker text on hover */
+    background-color: #ecf0f1; /* Light background on hover */
+    border-radius: 5px; /* Rounded corners */
+  }
+  
+  /* Active link styling */
+  .nav-list a.active {
+    color: #2ecc71; /* Green color for active link */
+    font-weight: 600; /* Make active link bold */
+    border-bottom: 2px solid #2ecc71; /* Add underline to active link */
+  }
+  

@@ -1,0 +1,40 @@
+<div class="container my-5">
+  <div *ngIf="residence; else notFound" class="card shadow-lg">
+   
+    <div class="text-center p-3">
+      <img
+        [src]="residence.image"
+        alt="Image of {{ residence.name }}"
+        class="card-img-top img-thumbnail small-image"
+      />
+    </div>
+
+    <div class="card-body">
+    
+      <h2 class="card-title text-center text-primary mb-4">{{ residence.name }}</h2>
+
+      <p class="card-text text-center text-muted">
+        <i class="fas fa-map-marker-alt"></i> {{ residence.address }}
+      </p>
+
+    
+      <div class="text-center mt-4">
+        <button class="btn btn-outline-primary btn-lg" (click)="goToNext()">
+          Next Residence <i class="fas fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  
+  <ng-template #notFound>
+    <div class="alert alert-warning text-center">
+      <p class="fs-4">
+        <i class="fas fa-exclamation-triangle text-warning"></i> Residence not found!
+      </p>
+      <button class="btn btn-primary mt-3" (click)="router.navigate(['/residences'])">
+        <i class="fas fa-arrow-left"></i> Go to Residences List
+      </button>
+    </div>
+  </ng-template>
+</div>

@@ -1,0 +1,19 @@
+.small-image {
+  max-height: 200px;
+  width: auto; 
+  object-fit: cover; 
+  border-radius: 10px; 
+}
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.card-img-top {
+  margin: 0 auto;
+}
+.alert {
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 15px;
+}
